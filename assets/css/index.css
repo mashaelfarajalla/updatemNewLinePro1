@@ -16,6 +16,47 @@ body {
     font-family: 'FFShamelFamily-SansOneBook';
 }
 
+.tooltip2 {
+    border-radius: 10%;
+    position: fixed;
+    color: white;
+    display: flex;
+    height: 40px;
+    background: rgb(57 44 35 / 70%);
+    right: 71px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tooltip2::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-left: 15px solid rgb(57 44 35 / 70%);
+    border-bottom: 11px solid transparent;
+    top: 20%;
+    right: -21%;
+}
+
+.slider li:hover .tooltip2 {
+    opacity: 1;
+}
+
+.tooltip2 p {
+    padding: 9px 10px 12px 10px;
+    margin-bottom: 0;
+    /* padding-top: 9px; */
+    font-family: 'FFShamelFamily-SansOneBook';
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
 /*Header Start*/
 @media screen and (min-width: 992px) {
     header {
@@ -341,7 +382,8 @@ header div a {
 .slider {
     position: fixed;
     background-color: #FAFAFA;
-    z-index: var(--z-fixed);
+    /* z-index: var(--z-fixed); */
+    z-index: 1;
     transition: .5s;
 }
 
@@ -1052,9 +1094,23 @@ input[type=submit] {
     }
 
     .container4 .swiper-slide p {
-        width: 630px;
         padding: 15px 30px 15px 41px;
+        width: 589px;
     }
+
+    .container4 .swiper-slide {
+        height: 420px;
+    }
+
+    .container4 .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        left: -35%;
+    }
+
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1066,8 +1122,14 @@ input[type=submit] {
 
     .container4 .swiper-slide p {
         width: 324px;
-        padding: 4px 11px 4px 11px;
+        padding: 11px 20px 10px 0px;
     }
+
+    .container4 .swiper-slide {
+        height: 485px;
+
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1076,6 +1138,24 @@ input[type=submit] {
     .container4 .swiper-button-prev:after {
         bottom: 677px;
     }
+
+    .container4 .swiper-slide {
+        height: 438px;
+    }
+
+    .container4 .swiper-slide p {
+        padding: 15px 30px 15px 41px;
+        width: 433px;
+    }
+
+    .container4 .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        left: -25%;
+    }
+
+
 }
 
 
@@ -1118,18 +1198,14 @@ input[type=submit] {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
     bottom: -3px;
-    left: -35%;
+    /* left: -35%; */
     width: 100%;
 }
 
 .container4 .swiper-slide {
-    height: 420px;
     flex-direction: column;
     text-align: center;
     font-size: 18px;
-    /* background: #fff; */
-
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1149,8 +1225,7 @@ input[type=submit] {
     background-color: white;
     text-align: start;
 
-    border-radius: 15px;
-
+    border-radius: 1.25rem !important;
 }
 
 .container4 .swiper-slide img {
@@ -1200,6 +1275,23 @@ input[type=submit] {
 }
 
 
+.container4 .y-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container4 .y-icons span {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #A5A5A5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
 .container4 .swiper-button-next:after,
 .container4 .swiper-button-prev:after {
     color: #A5A5A5;
@@ -1215,22 +1307,36 @@ input[type=submit] {
     border: 1px solid #A5A5A5;
 }
 
+.container4 .swiper-slide p {
+    font-size: 16px;
+    font-family: 'FFShamelFamily-SansOneBold';
+    color: #392C23;
+}
+
 .yborder {
+    margin-top: 34px;
     border: 2px solid #3ec4b5;
     padding: 13px;
     border-radius: 10px;
+}
+
+.y-answers p {
+    font-family: 'FFShamelFamily-SansOneBook';
+    font-size: 16px;
+    color: #707070;
 }
 
 
 .y-answer .y-answers span {
     width: 24px;
     height: 24px;
+    background-color: white;
     display: inline-block;
     border: solid 1px #D6D6D6;
     border-radius: 50%;
     line-height: 25px;
     text-align: center;
-    margin-right: 20px;
+    margin-left: 5px;
 }
 
 
@@ -1459,6 +1565,12 @@ small {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+.container7 .animate__animated .animate__zoomInRight {
+    --animate-duration: 1s;
+}
+
+
+
 .container7 .col p {
     padding-left: 0px;
     font-size: 16px;
@@ -1496,9 +1608,10 @@ small {
     color: white;
 }
 
-.hoverDiv:hover a div.circle5 {
+/* .hoverDiv:hover a div .circle5 {
+    transform: scale(.9);
     margin-left: 10px;
-}
+} */
 
 small {
     --bs-text-opacity: 1;
