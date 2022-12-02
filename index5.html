@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            /*===== LINK ACTIVE =====*/
+            const linkColor = document.querySelectorAll('.fotlink')
+
+            function colorLink() {
+                if (linkColor) {
+                    linkColor.forEach(l => l.classList.remove('active'))
+                    this.classList.add('active')
+                }
+            }
+            linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+            // Your code to run since DOM is loaded and ready
+        });
+
+    </script>
+
+
+</head>
+
+<body onload="myFunction()">
+
+    <div id="div" data-aos="fade-left">
+    </div>
+
+    <!--Header md > lg Start-->
+    <header class="header d-md-none d-lg-flex p-3 mb-3 border-bottom index">
+        <div class="container">
+
+            <div class="grid d-flex justify-content-between align-items-center text-center">
+                <div class="g-col g-col-md-4 d-flex">
+                    <div class="g-col-1 mx-2">
+                        <a href="index.html"
+                            class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.947" height="20" viewBox="0 0 18.947 20">
+                                <g id="icons8_user" transform="translate(-3 -2)">
+                                    <circle id="Ellipse_110" data-name="Ellipse 110" cx="5.5" cy="5.5" r="5.5"
+                                        transform="translate(7 2)" fill="#392c23" />
+                                    <path id="Path_971" data-name="Path 971"
+                                        d="M18.789,15H6.158a3.158,3.158,0,1,0,0,6.316H18.789a3.158,3.158,0,1,0,0-6.316Z"
+                                        transform="translate(0 0.684)" fill="#392c23" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="g-col-1 mx-2">
+                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path id="Subtraction_9" data-name="Subtraction 9"
+                                    d="M2856,20a1.988,1.988,0,0,1-1.415-.586l-2.795-2.795a9,9,0,1,1,2.828-2.828l1.933,1.932.6.6.258.258A2,2,0,0,1,2856,20Zm-9-17a6,6,0,1,0,6,6A6.007,6.007,0,0,0,2847,3Z"
+                                    transform="translate(-2838)" fill="#392c23" />
+                            </svg>
+                        </a>
+                    </div>
+
+
+                    <div class="g-col-1 mx-2">
+                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <g id="icons8_geography" transform="translate(-2 -1)">
+                                    <path id="Path_973" data-name="Path 973"
+                                        d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm6.918,6h-2.3a12.822,12.822,0,0,0-1.052-3.154A8.06,8.06,0,0,1,18.918,8ZM20,12a7.952,7.952,0,0,1-.263,2h-2.83c.06-.643.093-1.311.093-2s-.033-1.357-.093-2h2.83A7.952,7.952,0,0,1,20,12Zm-8,8c-.843,0-1.949-1.481-2.555-4h5.11C13.949,18.519,12.843,20,12,20ZM9.108,14a18.572,18.572,0,0,1,0-4h5.784A18.8,18.8,0,0,1,15,12a18.8,18.8,0,0,1-.108,2ZM4,12a7.952,7.952,0,0,1,.263-2h2.83C7.033,10.643,7,11.311,7,12s.033,1.357.093,2H4.263A7.952,7.952,0,0,1,4,12Zm8-8c.843,0,1.949,1.481,2.555,4H9.445C10.051,5.481,11.157,4,12,4Zm-3.56.846A12.822,12.822,0,0,0,7.388,8H5.082A8.056,8.056,0,0,1,8.44,4.846ZM5.082,16h2.3a12.822,12.822,0,0,0,1.052,3.154A8.059,8.059,0,0,1,5.082,16ZM15.56,19.154A12.864,12.864,0,0,0,16.612,16h2.3A8.048,8.048,0,0,1,15.56,19.154Z"
+                                        transform="translate(0 -1)" fill="#392c23" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="g-col-1 mx-2">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            العربية
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">العربية</a></li>
+                            <li><a class="dropdown-item" href="#">الانجليزية</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="g-col g-col-md-4 image">
+                    <a href="index.html"><img src="assets/image/iconimag.png">
+                    </a>
+                </div>
+                <div class="g-col g-col-md-4 d-flex">
+                    <div class="d-flex">
+                        <p>الإثنين 1 محرم 1443 - 09 أغسطس 2021 | 11:46 صباحا</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g id="icons8_clock" transform="translate(-2 -2)">
+                                <path id="Path_966" data-name="Path 966"
+                                    d="M14.892,13.586,13.88,12.117a1.437,1.437,0,0,1-.287-.681L13.12,8.05A1.05,1.05,0,0,0,12.07,7h0a1.05,1.05,0,0,0-1.05,1.05L10.6,11.734a1.792,1.792,0,0,0,.623,1.57l2.181,1.767a1.049,1.049,0,0,0,1.485,0h0A1.052,1.052,0,0,0,14.892,13.586Z"
+                                    transform="translate(-0.121 -0.166)" fill="#392c23" />
+                                <path id="Path_967" data-name="Path 967"
+                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,17a7,7,0,1,1,7-7A7,7,0,0,1,12,19Z"
+                                    transform="translate(0 0)" fill="#392c23" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="d-flex me-3">
+                        <p>+42°C</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                            <path id="icons8_sun"
+                                d="M17.983,3.978A1.05,1.05,0,0,0,16.95,5.043v2.1a1.05,1.05,0,0,0,2.1,0v-2.1a1.05,1.05,0,0,0-1.066-1.064Zm-9.152,3.8a1.049,1.049,0,0,0-.731,1.8l1.485,1.484a1.051,1.051,0,1,0,1.486-1.485L9.586,8.091A1.05,1.05,0,0,0,8.832,7.774Zm18.3,0a1.05,1.05,0,0,0-.722.317L24.929,9.575a1.051,1.051,0,1,0,1.486,1.485L27.9,9.577a1.049,1.049,0,0,0-.764-1.8ZM18,10.29a7.7,7.7,0,1,0,7.7,7.7A7.714,7.714,0,0,0,18,10.29Zm0,2.1a5.6,5.6,0,1,1-5.6,5.6A5.583,5.583,0,0,1,18,12.389ZM5.05,16.936a1.049,1.049,0,1,0,0,2.1h2.1a1.049,1.049,0,1,0,0-2.1Zm23.8,0a1.049,1.049,0,1,0,0,2.1h2.1a1.049,1.049,0,1,0,0-2.1ZM10.307,24.594a1.05,1.05,0,0,0-.722.317L8.1,26.395A1.051,1.051,0,0,0,9.586,27.88L11.071,26.4a1.049,1.049,0,0,0-.764-1.8Zm15.353,0a1.049,1.049,0,0,0-.731,1.8l1.485,1.484A1.051,1.051,0,1,0,27.9,26.395l-1.485-1.484a1.05,1.05,0,0,0-.755-.317Zm-7.677,3.172A1.05,1.05,0,0,0,16.95,28.83v2.1a1.05,1.05,0,0,0,2.1,0v-2.1a1.05,1.05,0,0,0-1.066-1.064Z"
+                                transform="translate(-4 -3.978)" fill="#392c23" />
+                        </svg>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+    <!--Header  End-->
+
+    <!--Header sm Start-->
+    <nav class="d-md-flex d-lg-none index">
+        <label class="logo">
+            <a href="index.html"><img src="assets/image/iconimag.png">
+            </a>
+        </label>
+        <div class="grid d-flex justify-content-between align-items-center text-center">
+            <div class="g-col g-col-md-4 d-flex">
+                <div class="g-col-1 mx-2">
+                    <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.947" height="20" viewBox="0 0 18.947 20">
+                            <g id="icons8_user" transform="translate(-3 -2)">
+                                <circle id="Ellipse_110" data-name="Ellipse 110" cx="5.5" cy="5.5" r="5.5"
+                                    transform="translate(7 2)" fill="#392c23" />
+                                <path id="Path_971" data-name="Path 971"
+                                    d="M18.789,15H6.158a3.158,3.158,0,1,0,0,6.316H18.789a3.158,3.158,0,1,0,0-6.316Z"
+                                    transform="translate(0 0.684)" fill="#392c23" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="g-col-1 mx-2">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path id="Subtraction_9" data-name="Subtraction 9"
+                                d="M2856,20a1.988,1.988,0,0,1-1.415-.586l-2.795-2.795a9,9,0,1,1,2.828-2.828l1.933,1.932.6.6.258.258A2,2,0,0,1,2856,20Zm-9-17a6,6,0,1,0,6,6A6.007,6.007,0,0,0,2847,3Z"
+                                transform="translate(-2838)" fill="#392c23" />
+                        </svg>
+                    </a>
+                </div>
+
+
+                <div class="g-col-1 mx-2">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <g id="icons8_geography" transform="translate(-2 -1)">
+                                <path id="Path_973" data-name="Path 973"
+                                    d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm6.918,6h-2.3a12.822,12.822,0,0,0-1.052-3.154A8.06,8.06,0,0,1,18.918,8ZM20,12a7.952,7.952,0,0,1-.263,2h-2.83c.06-.643.093-1.311.093-2s-.033-1.357-.093-2h2.83A7.952,7.952,0,0,1,20,12Zm-8,8c-.843,0-1.949-1.481-2.555-4h5.11C13.949,18.519,12.843,20,12,20ZM9.108,14a18.572,18.572,0,0,1,0-4h5.784A18.8,18.8,0,0,1,15,12a18.8,18.8,0,0,1-.108,2ZM4,12a7.952,7.952,0,0,1,.263-2h2.83C7.033,10.643,7,11.311,7,12s.033,1.357.093,2H4.263A7.952,7.952,0,0,1,4,12Zm8-8c.843,0,1.949,1.481,2.555,4H9.445C10.051,5.481,11.157,4,12,4Zm-3.56.846A12.822,12.822,0,0,0,7.388,8H5.082A8.056,8.056,0,0,1,8.44,4.846ZM5.082,16h2.3a12.822,12.822,0,0,0,1.052,3.154A8.059,8.059,0,0,1,5.082,16ZM15.56,19.154A12.864,12.864,0,0,0,16.612,16h2.3A8.048,8.048,0,0,1,15.56,19.154Z"
+                                    transform="translate(0 -1)" fill="#392c23" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <ul class="ul">
+            <li>
+                <a href="#" class="dropDown1">
+                    <div>البلدية</div>
+                    <div><i class="fa-solid fa-caret-down"></i></div>
+                </a>
+                <ul class="submenu1 d-flex align-items-center justify-content-start">
+                    <a href="index5.html" class="nav-link active py-3" title="" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-original-title="Dashboard">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <g id="svgexport-6_47_" data-name="svgexport-6 (47)" transform="translate(-2 -2)">
+                                    <g id="Group_1637" data-name="Group 1637" transform="translate(2 2)">
+                                        <path id="Path_1259" data-name="Path 1259"
+                                            d="M76.717,179.718V158.289a.857.857,0,0,1,.857-.857H87.86a.857.857,0,0,1,.857.857v4.286h7.714a.857.857,0,0,1,.857.857v16.286h.857a.857.857,0,0,1,0,1.714H75.86a.857.857,0,0,1,0-1.714Zm10.286,0V159.146H78.432v20.571h1.712v-4.286a.857.857,0,0,1,.857-.857h3.429a.857.857,0,0,1,.857.857v4.286Zm-5.145-3.429v3.429h1.714v-3.429Zm6.86-12v15.429h6.857V164.289ZM91.286,178H93a.857.857,0,0,0,0-1.714H91.286a.857.857,0,1,0,0,1.714Zm0-3.429H93a.857.857,0,0,0,0-1.714H91.286a.857.857,0,1,0,0,1.714ZM81,172.861h3.429a.857.857,0,1,0,0-1.714H81a.857.857,0,0,0,0,1.714Zm10.286-1.714H93a.857.857,0,1,0,0-1.714H91.286a.857.857,0,1,0,0,1.714ZM81,169.432h3.429a.857.857,0,1,0,0-1.714H81a.857.857,0,0,0,0,1.714Zm10.286-1.714H93A.857.857,0,0,0,93,166H91.286a.857.857,0,1,0,0,1.714ZM81,166h3.429a.857.857,0,1,0,0-1.714H81A.857.857,0,1,0,81,166Zm3.429-5.143a.857.857,0,1,1,0,1.714H80.97l-.027,0-.027,0-.027,0-.027,0-.026,0-.032-.007-.029-.008-.03-.009-.03-.009-.025-.009-.024-.01-.024-.01-.023-.011-.023-.012-.023-.012-.022-.014-.021-.014-.021-.015-.021-.015-.021-.015-.024-.02-.023-.021-.022-.021-.021-.021-.022-.025-.02-.023-.019-.025-.018-.025-.015-.021-.014-.022-.013-.022-.013-.022-.012-.023-.013-.028-.013-.029-.011-.03-.009-.027-.009-.03-.007-.026-.006-.026-.005-.027,0-.027,0-.027,0-.027,0-.027,0-.027v-.057l0-.027,0-.027,0-.015a.858.858,0,0,1,.851-.753Z"
+                                            transform="translate(-75.003 -157.432)" fill="#cf2a45" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+
+                    </a>
+                </ul>
+            </li>
+
+            <li><a href="#" class="dropDown2">
+                    <div>المدينة</div>
+                    <div><i class="fa-solid fa-caret-down"></i></div>
+                </a></a>
+                <ul class="submenu2 d-flex align-items-center justify-content-start">
+                    <a href="#" class="nav-link  py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-original-title="Dashboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.83" height="23.213"
+                            viewBox="0 0 16.83 23.213">
+                            <path id="icons8_marker"
+                                d="M11.415,1A8.431,8.431,0,0,0,3,9.415a10.142,10.142,0,0,0,1.269,4.234,39.189,39.189,0,0,0,2.663,4.53c1.92,2.886,3.833,5.233,3.833,5.233l.651.8.651-.8s1.913-2.347,3.839-5.233a40.1,40.1,0,0,0,2.656-4.53A10.142,10.142,0,0,0,19.83,9.415,8.431,8.431,0,0,0,11.415,1Zm0,1.683a6.72,6.72,0,0,1,6.732,6.732,9.392,9.392,0,0,1-1.1,3.5A40.247,40.247,0,0,1,14.5,17.251c-1.545,2.314-2.6,3.589-3.09,4.207-.493-.618-1.545-1.893-3.09-4.207a40.227,40.227,0,0,1-2.544-4.339,9.391,9.391,0,0,1-1.1-3.5A6.72,6.72,0,0,1,11.415,2.683Zm0,5.049A1.683,1.683,0,1,0,13.1,9.415,1.686,1.686,0,0,0,11.415,7.732Z"
+                                transform="translate(-3 -1)" fill="#392c23" />
+                        </svg>
+
+                    </a>
+                    <a href="index6.html" class="nav-link active py-3" title="" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-original-title="Dashboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.83" height="21.879"
+                            viewBox="0 0 16.83 21.879">
+                            <path id="icons8_sand_timer"
+                                d="M3,1V2.683H4.683V6.049a6.717,6.717,0,0,0,3.543,5.89,6.717,6.717,0,0,0-3.543,5.89V21.2H3v1.683H19.83V21.2H18.147V17.83a6.717,6.717,0,0,0-3.543-5.89,6.717,6.717,0,0,0,3.543-5.89V2.683H19.83V1ZM6.366,2.683h10.1V6.049a5.049,5.049,0,0,1-10.1,0Zm5.049,10.1a5.034,5.034,0,0,1,5.049,5.049V21.2H14.781V19.513a3.366,3.366,0,0,0-6.732,0V21.2H6.366V17.83A5.034,5.034,0,0,1,11.415,12.781Z"
+                                transform="translate(-3 -1)" fill="#cf2a45" />
+                        </svg>
+                    </a>
+                </ul>
+            </li>
+            <li><a href="#" class="dropDown3">
+                    <div>الخدمات</div>
+                    <div><i class="fa-solid fa-caret-down"></i></div>
+                </a></a>
+                <ul class="submenu3 d-flex align-items-center justify-content-start">
+                    <a href="index7.html" class="nav-link active py-3" title="" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-original-title="Dashboard">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23.888" height="20.195"
+                                viewBox="0 0 23.888 20.195">
+                                <path id="icons8_service"
+                                    d="M17.83,2V4.038a4.256,4.256,0,0,0-2.311.98c-.016.018-.007.047-.023.066l-.776-.447-.73-.421L13.15,5.675l.73.421,1.026.592c-.122.416-.44.773-.44,1.2s.319.787.44,1.2l-1.026.592-.73.421.841,1.459.73-.421L15.5,10.7c.016.019.007.047.023.066a4.256,4.256,0,0,0,2.311.98v2.038h1.683V11.743a4.255,4.255,0,0,0,2.311-.98c.016-.018.007-.047.023-.066l.776.447.73.421.841-1.459-.73-.421-1.026-.592c.122-.416.44-.773.44-1.2s-.319-.787-.44-1.2L23.465,6.1l.73-.421-.841-1.459-.73.421-.776.447c-.016-.019-.007-.047-.023-.066a4.255,4.255,0,0,0-2.311-.98V2Zm.841,3.366a2.366,2.366,0,0,1,1.9.769,2.768,2.768,0,0,1,0,3.511,2.366,2.366,0,0,1-1.9.769,2.366,2.366,0,0,1-1.9-.769,2.768,2.768,0,0,1,0-3.511A2.366,2.366,0,0,1,18.672,5.366ZM7.732,12.1a9.2,9.2,0,0,0-1.923.25.842.842,0,0,0-.089.026L1.563,13.827a.842.842,0,0,0-.519,1.062l1.683,5.049a.842.842,0,0,0,1.111.516L7.7,18.909l5.345,2.636-.1-.053a4.213,4.213,0,0,0,4.135.3.841.841,0,0,0,.112-.062l7-4.723.7-.47-.94-1.394-.7.47-6.906,4.658a2.52,2.52,0,0,1-2.465-.178.841.841,0,0,0-.1-.053l-5.68-2.8a.842.842,0,0,0-.684-.026L4.041,18.557,2.9,15.142l3.32-1.16a9.074,9.074,0,0,1,1.509-.2,2.6,2.6,0,0,1,2.005.661,16.254,16.254,0,0,0,3.07,2.258c.988.437,2.07.475,4.191.447l.841-.01-.02-1.683-.841.01a8.933,8.933,0,0,1-3.488-.3,19,19,0,0,1-2.715-2.041A4.667,4.667,0,0,0,7.732,12.1Z"
+                                    transform="translate(-0.999 -2)" fill="#cf2a45" />
+                            </svg>
+
+                        </span>
+                    </a>
+                </ul>
+            </li>
+
+
+            <li><a href="#" class="dropDown4">
+                    <div>المشاريع</div>
+                    <div><i class="fa-solid fa-caret-down"></i></div>
+                </a></a>
+                <ul class="submenu4 d-flex align-items-center justify-content-start">
+                    <a href="index8.html" class="nav-link active py-3" title="" data-bs-toggle="tooltip"
+                        data-bs-placement="right" data-bs-original-title="Dashboard">
+                        <span>
+                            <svg id="icons8_engineering" xmlns="http://www.w3.org/2000/svg" width="22.813"
+                                height="23.562" viewBox="0 0 22.813 23.562">
+                                <path id="icons8_engineering-2" data-name="icons8_engineering"
+                                    d="M10.234,1,9.827,3.166A10,10,0,0,0,5.718,5.539L3.641,4.806,1.234,8.974,2.9,10.4a9.946,9.946,0,0,0-.355,2.38,9.946,9.946,0,0,0,.355,2.38L1.234,16.587l2.406,4.168,2.077-.733A10,10,0,0,0,9.827,22.4l.408,2.166h4.812l.408-2.166a10,10,0,0,0,4.106-2.373l2.081.733,2.406-4.168L22.38,15.161a9.916,9.916,0,0,0,.358-2.38,9.948,9.948,0,0,0-.355-2.38l1.663-1.427L21.641,4.806l-2.077.733a10,10,0,0,0-4.109-2.377L15.047,1Zm1.4,1.683H13.65l.335,1.778.539.125A8.391,8.391,0,0,1,18.8,7.055l.375.4,1.709-.6L21.89,8.606,20.523,9.78l.164.526a8.469,8.469,0,0,1,0,4.95l-.161.526,1.367,1.174L20.881,18.7l-1.713-.6-.375.4a8.391,8.391,0,0,1-4.273,2.469l-.536.125-.335,1.778H11.631L11.3,21.1l-.536-.125a8.39,8.39,0,0,1-4.273-2.469l-.375-.4L4.4,18.7,3.391,16.956l1.367-1.174L4.6,15.256a8.433,8.433,0,0,1,0-4.95l.161-.526L3.391,8.606,4.4,6.858l1.713.6.375-.4A8.391,8.391,0,0,1,10.76,4.586l.536-.125Zm1.009,3.366a6.732,6.732,0,1,0,6.732,6.732A6.745,6.745,0,0,0,12.641,6.049Zm0,1.683a5.049,5.049,0,1,1-5.049,5.049A5.036,5.036,0,0,1,12.641,7.732Zm0,3.366a1.683,1.683,0,1,0,1.683,1.683A1.683,1.683,0,0,0,12.641,11.1Z"
+                                    transform="translate(-1.234 -1)" fill="#cf2a45" />
+                            </svg>
+                        </span>
+
+                    </a>
+                </ul>
+            </li>
+
+            <li><a href="#" class="dropDown5">
+                    <div>المركز الإعلامي</div>
+                    <div><i class="fa-solid fa-caret-down"></i></div>
+                </a></a>
+                <ul class="submenu5 d-flex align-items-center justify-content-start">
+                </ul>
+            </li>
+
+
+            <div class="g-col g-col-md-4">
+                <div class="d-flex justify-content-center">
+                    <p>الإثنين 1 محرم 1443 - 09 أغسطس 2021 | 11:46 صباحا</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g id="icons8_clock" transform="translate(-2 -2)">
+                            <path id="Path_966" data-name="Path 966"
+                                d="M14.892,13.586,13.88,12.117a1.437,1.437,0,0,1-.287-.681L13.12,8.05A1.05,1.05,0,0,0,12.07,7h0a1.05,1.05,0,0,0-1.05,1.05L10.6,11.734a1.792,1.792,0,0,0,.623,1.57l2.181,1.767a1.049,1.049,0,0,0,1.485,0h0A1.052,1.052,0,0,0,14.892,13.586Z"
+                                transform="translate(-0.121 -0.166)" fill="#392c23" />
+                            <path id="Path_967" data-name="Path 967"
+                                d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,17a7,7,0,1,1,7-7A7,7,0,0,1,12,19Z"
+                                transform="translate(0 0)" fill="#392c23" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="d-flex me-3 justify-content-center">
+                    <p>+42°C</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                        <path id="icons8_sun"
+                            d="M17.983,3.978A1.05,1.05,0,0,0,16.95,5.043v2.1a1.05,1.05,0,0,0,2.1,0v-2.1a1.05,1.05,0,0,0-1.066-1.064Zm-9.152,3.8a1.049,1.049,0,0,0-.731,1.8l1.485,1.484a1.051,1.051,0,1,0,1.486-1.485L9.586,8.091A1.05,1.05,0,0,0,8.832,7.774Zm18.3,0a1.05,1.05,0,0,0-.722.317L24.929,9.575a1.051,1.051,0,1,0,1.486,1.485L27.9,9.577a1.049,1.049,0,0,0-.764-1.8ZM18,10.29a7.7,7.7,0,1,0,7.7,7.7A7.714,7.714,0,0,0,18,10.29Zm0,2.1a5.6,5.6,0,1,1-5.6,5.6A5.583,5.583,0,0,1,18,12.389ZM5.05,16.936a1.049,1.049,0,1,0,0,2.1h2.1a1.049,1.049,0,1,0,0-2.1Zm23.8,0a1.049,1.049,0,1,0,0,2.1h2.1a1.049,1.049,0,1,0,0-2.1ZM10.307,24.594a1.05,1.05,0,0,0-.722.317L8.1,26.395A1.051,1.051,0,0,0,9.586,27.88L11.071,26.4a1.049,1.049,0,0,0-.764-1.8Zm15.353,0a1.049,1.049,0,0,0-.731,1.8l1.485,1.484A1.051,1.051,0,1,0,27.9,26.395l-1.485-1.484a1.05,1.05,0,0,0-.755-.317Zm-7.677,3.172A1.05,1.05,0,0,0,16.95,28.83v2.1a1.05,1.05,0,0,0,2.1,0v-2.1a1.05,1.05,0,0,0-1.066-1.064Z"
+                            transform="translate(-4 -3.978)" fill="#392c23" />
+                    </svg>
+
+                </div>
+
+                <div class="align-items-center =">
+                    <p class="mb-2">جميع الحقوق محفوظة لدى <span class="span">بلدية غزة</span> &copy; 2021 </p>
+                    <div class="d-flex justify-content-center">
+                        <div class="square ms-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14.376" height="11.579"
+                                viewBox="0 0 14.376 11.579">
+                                <path id="icons8_twitter"
+                                    d="M18.269,8.369a5.98,5.98,0,0,1-1.7.464,2.946,2.946,0,0,0,1.3-1.62A5.924,5.924,0,0,1,16,7.922a2.942,2.942,0,0,0-5.023,2.668A8.4,8.4,0,0,1,4.9,7.533a2.914,2.914,0,0,0,.912,3.906,3,3,0,0,1-1.337-.365v.034a2.932,2.932,0,0,0,2.365,2.867,2.935,2.935,0,0,1-.775.1,3.135,3.135,0,0,1-.556-.054,2.955,2.955,0,0,0,2.754,2.031A5.959,5.959,0,0,1,4.6,17.309a5.842,5.842,0,0,1-.7-.042,8.429,8.429,0,0,0,4.522,1.312,8.3,8.3,0,0,0,8.392-8.319c0-.127,0-.253-.01-.377a5.8,5.8,0,0,0,1.472-1.514"
+                                    transform="translate(-3.893 -7)" fill="#fff" />
+                            </svg>
+                        </div>
+                        <div class="square ms-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path id="Union_8" data-name="Union 8"
+                                    d="M4.308,16A4.313,4.313,0,0,1,0,11.692V4.308A4.313,4.313,0,0,1,4.308,0h7.384A4.313,4.313,0,0,1,16,4.308v7.384A4.313,4.313,0,0,1,11.692,16ZM1.231,4.308v7.384a3.081,3.081,0,0,0,3.077,3.077h7.384a3.081,3.081,0,0,0,3.077-3.077V4.308a3.081,3.081,0,0,0-3.077-3.077H4.308A3.08,3.08,0,0,0,1.231,4.308ZM3.692,8A4.308,4.308,0,1,1,8,12.308,4.313,4.313,0,0,1,3.692,8ZM4.923,8A3.077,3.077,0,1,0,8,4.923,3.08,3.08,0,0,0,4.923,8Zm6.769-4.615a.923.923,0,1,1,.923.923A.923.923,0,0,1,11.692,3.385Z"
+                                    fill="#fff" />
+                            </svg>
+
+                        </div>
+                        <div class="square ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 14 14">
+                                <g id="icons8_facebook_logo_1" transform="translate(-0.188 0.071)">
+                                    <path id="Subtraction_5" data-name="Subtraction 5"
+                                        d="M6.966,14A7,7,0,0,1,2.05,2.05a7,7,0,0,1,9.91,9.889A6.965,6.965,0,0,1,7.187,14c.23-.008.479-.031.761-.069V8.855H9.759l.284-1.84h-2.1V6.009A2.064,2.064,0,0,1,8.162,5a.814.814,0,0,1,.751-.435h1.149V2.961h-.009a9.772,9.772,0,0,0-1.427-.086c-1.773,0-2.672.981-2.672,2.917V7.015H4.221v1.84H5.953v5.058A7.084,7.084,0,0,0,6.966,14Z"
+                                        transform="translate(0.188 -0.071)" fill="#fff" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+
+
+        <label id="icon">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </label>
+    </nav>
+
+    <!--Header  End-->
+
+    <!--NavBar  Start-->
+    <div class="slider index d-flex  flex-shrink-0 flex-sm-row flex-lg-column justify-content-between">
+        <ul class="nav nav-pills nav-flush d-flex flex-sm-row flex-lg-column  text-center">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active py-3" aria-current="page" title="" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-original-title="Home">
+                    <svg id="icons8_home_1" xmlns="http://www.w3.org/2000/svg" width="24.926" height="21.53"
+                        viewBox="0 0 24.926 21.53">
+                        <path id="icons8_home_1-2" data-name="icons8_home_1"
+                            d="M13.123,1.32.66,12.888l1.154,1.247,1.121-1.041V22.85h8.49V14.36h3.4v8.49h8.49V13.094l1.121,1.041,1.154-1.247Zm0,2.308,8.49,7.893v9.631H16.519v-8.49H9.727v8.49H4.633V11.522Z"
+                            transform="translate(-0.66 -1.32)" fill="#cf2a45" />
+                    </svg>
+
+                </a>
+            </li>
+            <li>
+                <a href="index2.html" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-original-title="Dashboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.282" height="22.074" viewBox="0 0 15.282 22.074">
+                        <path id="icons8_android"
+                            d="M5.547,1A2.556,2.556,0,0,0,3,3.547v16.98a2.556,2.556,0,0,0,2.547,2.547H15.735a2.556,2.556,0,0,0,2.547-2.547V3.547A2.556,2.556,0,0,0,15.735,1Zm0,1.7H15.735a.838.838,0,0,1,.849.849v16.98a.838.838,0,0,1-.849.849H5.547a.838.838,0,0,1-.849-.849V3.547A.838.838,0,0,1,5.547,2.7ZM9.792,17.98v1.7h1.7v-1.7Z"
+                            transform="translate(-3 -1)" fill="#392c23" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="index3.html" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-original-title="Products">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22.074" height="20.376" viewBox="0 0 22.074 20.376">
+                        <path id="icons8_telephone"
+                            d="M12.037,2c-.929,0-1.764.033-2.547.08V2.066c-.06,0-.113.013-.172.013a25.44,25.44,0,0,0-5.724.9A3.811,3.811,0,0,0,1.822,4.189,3.206,3.206,0,0,0,1,6.245V8.792H6.107l.073-.769A7.961,7.961,0,0,1,6.8,5.781,4.037,4.037,0,0,1,7.832,4.355a2.352,2.352,0,0,1,1.141-.544c.113-.007.192-.02.312-.033.007,0,.013.007.02,0,.816-.046,1.725-.08,2.733-.08s1.917.033,2.733.08c.007.007.013,0,.02,0,.027.007.053.007.086.013.08,0,.146.013.226.02a2.352,2.352,0,0,1,1.141.544,4.035,4.035,0,0,1,1.035,1.426,7.959,7.959,0,0,1,.617,2.242l.066.769h5.114V6.245a3.206,3.206,0,0,0-.823-2.056A3.811,3.811,0,0,0,20.48,2.982a25.441,25.441,0,0,0-5.724-.9c-.06,0-.113-.013-.172-.013V2.08C13.8,2.033,12.965,2,12.037,2ZM5.742,4.222a6.983,6.983,0,0,0-.484.856A5.848,5.848,0,0,0,4.7,7.094h-2V6.245a1.618,1.618,0,0,1,.424-.962,2.214,2.214,0,0,1,.968-.67A16.291,16.291,0,0,1,5.742,4.222Zm12.589,0a16.925,16.925,0,0,1,1.658.391,2.235,2.235,0,0,1,.962.67,1.618,1.618,0,0,1,.424.962v.849h-2a5.952,5.952,0,0,0-.55-2.016A8.044,8.044,0,0,0,18.331,4.222ZM7.792,8.792v1.8l-.08.053a18.457,18.457,0,0,0-2.454,2.242c-1.234,1.34-2.56,3.151-2.56,5.24v1.7a2.556,2.556,0,0,0,2.547,2.547H18.829a2.556,2.556,0,0,0,2.547-2.547v-1.7c0-2.089-1.326-3.9-2.554-5.24a18.736,18.736,0,0,0-2.461-2.242l-.08-.053v-1.8h-1.7v1.7H9.49v-1.7Zm.743,3.4h7a14.675,14.675,0,0,1,2.023,1.844c1.108,1.207,2.116,2.792,2.116,4.1v1.7a.838.838,0,0,1-.849.849H5.245a.838.838,0,0,1-.849-.849v-1.7c0-1.307,1.008-2.892,2.109-4.1A14.959,14.959,0,0,1,8.535,12.188Zm-.743,1.7v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm-6.792,3.4v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Zm3.4,0v1.7h1.7v-1.7Z"
+                            transform="translate(-1 -2)" fill="#392c23" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="index4.html" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-original-title="Customers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22.074" height="22.074" viewBox="0 0 22.074 22.074">
+                        <path id="icons8_help_2"
+                            d="M12.037,1A11.037,11.037,0,1,1,1,12.037,11.054,11.054,0,0,1,12.037,1Zm0,1.7a9.339,9.339,0,1,0,9.339,9.339A9.327,9.327,0,0,0,12.037,2.7Zm-.1,3.4a3.979,3.979,0,0,1,3.734,3.94h-1.7a2.226,2.226,0,0,0-2.653-2.209A2.3,2.3,0,0,0,9.49,10.1,2.068,2.068,0,0,0,10.876,12a4.052,4.052,0,0,1,1.386.862,2.5,2.5,0,0,1,.623,1.725h-1.7c0-.385-.053-.444-.159-.557a3.135,3.135,0,0,0-.836-.478,3.859,3.859,0,0,1-2.4-3.4,3.961,3.961,0,0,1,3.243-4.006A4.639,4.639,0,0,1,11.937,6.094Zm.948,10.188v1.7h-1.7v-1.7Z"
+                            transform="translate(-1 -1)" fill="#392c23" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+
+
+    </div>
+    <!--NavBar  end-->
+
+
+
+    <!--links  start-->
+    <div class="fot index">
+        <nav class="fotnav">
+            <div>
+                <div class="fotdiv">
+                    <a href="index5.html" class="fotlink active">
+
+                        البلدية
+
+                    </a>
+                    <a href="index6.html" class="fotlink ">
+
+                        المدينة
+
+                    </a>
+                    <a href="index7.html" class="fotlink">
+
+                        الخدمات
+
+                    </a>
+                    <a href="index8.html" class="fotlink">
+                        المشاريع
+                    </a>
+                    <a href="#" class="fotlink">
+                        المركز الإعلامي
+                    </a>
+                </div>
+            </div>
+
+
+
+
+        </nav>
+    </div>
+    <!--links  start-->
+
+
+    <!--Container Main start-->
+
+    <div class=" bg section index container5 padding2">
+        <div class="container animate__animated animate__fadeInUpBig animate__delay-1s  ">
+            <div class="mt-5">
+                <h3>المراكز</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2  row-cols-lg-3 g-3 align-items-center">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assets/image/atrafplace-1092x614.png">
+                        <div class="divabsolute">
+                            <img src="assets/image/الاطراف الصناعية.png">
+                        </div>
+
+                        <div class="card-body mt-5">
+                            <h5>مركز الأطراف الصناعية</h5>
+                            <p class="card-text">
+                                برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
+                                الاعاقات الناتجة عن الحروب
+                                ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <small class="text-muted">عرض التفاصيل</small>
+                                <div class="circle5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                        viewBox="0 0 14 8.996">
+                                        <path id="Path_382" data-name="Path 382"
+                                            d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                            transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assets/image/0mlr1.png">
+                        <div class="divabsolute">
+                            <img src="assets/image/Group 62517.png">
+                        </div>
+
+                        <div class="card-body mt-5">
+                            <h5>ملعب اليرموك غزة</h5>
+                            <p class="card-text">
+                                ،يعتبر ملعب اليرموك أحد أكبر الملاعب على مستوى قطاع غزة
+                                حيث تتخذه عدد من الفرق المحلية كملعب رئيسي لخوض مبارياتها
+                                ...في الدوري المحلي. إلى جانب دوره الرياضي، يستغل الغزيون
+                            </p>
+                            <div class="d-flex align-items-center">
+
+                                <small class="text-muted">عرض التفاصيل</small>
+                                <div class="circle5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                        viewBox="0 0 14 8.996">
+                                        <path id="Path_382" data-name="Path 382"
+                                            d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                            transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assets/image/es3adimg1.png">
+                        <div class="divabsolute">
+                            <img src="assets/image/Group 6.png">
+                        </div>
+
+                        <div class="card-body mt-5">
+                            <h5>مركز حديقة إسعاد الطفولة</h5>
+                            <p class="card-text">
+                                إن مركز حديقة إسعاد الطفولة هو ثمرة لسلسلة من الجهود
+                                والاجتماعات واللقاءات وورشات العمل بين بلدية غزة ومؤسسة
+                                ...التعاون والعديد من المؤسسات الاجتماعية ذات الاهتمام
+                            </p>
+                            <div class="d-flex align-items-center">
+
+                                <small class="text-muted">عرض التفاصيل</small>
+                                <div class="circle5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                        viewBox="0 0 14 8.996">
+                                        <path id="Path_382" data-name="Path 382"
+                                            d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                            transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assets/image/99D6zZ84uyz2TYKyWApn9Gd94RbnRtbBRyvHoINe.png">
+                        <div class="divabsolute">
+                            <img src="assets/image/Group 625.png">
+                        </div>
+
+                        <div class="card-body mt-5">
+                            <h5>مكتبة بلدية غزة العامة</h5>
+                            <p class="card-text">
+                                تهدف المكتبة العامة الى المساعدة على الاستمرار في عملية
+                                التثقيف والتعليم الذاتي للمستفيدين دون حواجز، وتوفير مصادر
+                                ...المعلومات التي تلبي احتياجات المستفيدين واهتماماتهم
+                            </p>
+                            <div class="d-flex align-items-center">
+
+                                <small class="text-muted">عرض التفاصيل</small>
+                                <div class="circle5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                        viewBox="0 0 14 8.996">
+                                        <path id="Path_382" data-name="Path 382"
+                                            d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                            transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assets/image/fonoonTopHead.png">
+                        <div class="divabsolute">
+                            <img src="assets/image/Group 6251.png">
+                        </div>
+
+                        <div class="card-body mt-5">
+                            <h5>قرية الفنون والحرف </h5>
+                            <p class="card-text">
+                                تم تأسيس القرية عام 1998م، حيث تم تنفيذها بتمويل من برنامج
+                                ، وقام بالتنفيذ والإشراف المجلس (UNDP)الأمم المتحدة الإنمائي
+                                ...الاقتصادي الفلسطيني للتنمية والإعمار "بكـدار"، ضمن برنامج
+                            </p>
+                            <div class="d-flex align-items-center">
+
+                                <small class="text-muted">عرض التفاصيل</small>
+                                <div class="circle5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                        viewBox="0 0 14 8.996">
+                                        <path id="Path_382" data-name="Path 382"
+                                            d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                            transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assets/image/rashadBG1.png">
+                        <div class="divabsolute">
+                            <img src="assets/image/Group 625173.png">
+                        </div>
+
+                        <div class="card-body mt-5">
+                            <h5>مركز رشاد الشوا الثقافي</h5>
+                            <p class="card-text">
+                                يعتبر مركز رشاد الشوا الثقافي في مدينة غزه أول مركز ثقافي يبني
+                                في فلسطين, و قد تم إتمام الـعمل في المبني عام 1988م, هذا
+                                ...وبعد مرور عشرة سـنوات مـنذ البدء في البــناء وذلـك نتيجة
+                            </p>
+                            <div class="d-flex align-items-center">
+
+                                <small class="text-muted">عرض التفاصيل</small>
+                                <div class="circle5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                        viewBox="0 0 14 8.996">
+                                        <path id="Path_382" data-name="Path 382"
+                                            d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                            transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assets/image/holest1.png">
+                        <div class="divabsolute">
+                            <img src="assets/image/Group 62.png">
+                        </div>
+
+                        <div class="card-body mt-5">
+                            <h5>مركز هولست الثقافي</h5>
+                            <p class="card-text">
+                                يعمل مركز هولست الثقافي على رفع المستوى الثقافي والتعليمي
+                                والاجتماعي والصحي لأفراد المجتمع من أجل تحقيق التنمية في
+                                ...مختلف المجالات ، واستثمار الطاقات المتاحة ، وفي مقدمتها
+                            </p>
+                            <div class="d-flex align-items-center">
+
+                                <small class="text-muted">عرض التفاصيل</small>
+                                <div class="circle5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                        viewBox="0 0 14 8.996">
+                                        <path id="Path_382" data-name="Path 382"
+                                            d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                            transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Container Main end-->
+
+
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+<script>
+
+    AOS.init();
+
+
+    var loader = document.getElementById('div');
+    function myFunction() {
+        setInterval(function () {
+            loader.style.display = 'none';
+            $('.header').removeClass('index');
+            $('.fot').removeClass('index');
+        }, 1000);
+    };
+
+
+    $(document).ready(function () {
+        $('#icon').click(function () {
+            $('.ul').toggleClass('show');
+        })
+
+        $('.dropDown1').click(function () {
+            $('.submenu1').toggleClass('show2')
+        })
+
+        $('.dropDown3').click(function () {
+            $('.submenu3').toggleClass('show2')
+        })
+        $('.dropDown2').click(function () {
+            $('.submenu2').toggleClass('show2')
+        })
+        $('.dropDown4').click(function () {
+            $('.submenu4').toggleClass('show2')
+        })
+        $('.dropDown5').click(function () {
+            $('.submenu5').toggleClass('show2')
+        })
+    });
+
+</script>
+
+</html>

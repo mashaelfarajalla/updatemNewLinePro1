@@ -1,0 +1,79 @@
+  @font-face {
+      font-family: 'FFShamelFamily-SansOneBold';
+      src: url(./../fonts/ArbFONTS-FFShamelFamily-SansOneBold.ttf);
+  }
+
+  @font-face {
+      font-family: 'FFShamelFamily-SansOneBook';
+      src: url(./../fonts/ArbFONTS-FFShamelFamily-SansOneBook.ttf);
+  }
+
+  .bg {
+      background: url(./../image/Group.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .height-100 {
+      /* height: calc(76vh); */
+  }
+
+  div.container-fluid {
+      margin-top: 19vh;
+      width: 92%;
+      margin-left: 0px;
+      padding: 30px;
+  }
+
+  /* .card-body {
+      padding: 1rem 1rem 1rem .5rem;
+  } */
+
+  .card {
+      padding: 8px;
+  }
+
+  h3 {
+      color: #CF2A45;
+      font-size: 20px;
+      font-family: 'FFShamelFamily-SansOneBold';
+  }
+
+  div h5 {
+      font-family: 'FFShamelFamily-SansOneBold';
+      font-size: 16px;
+      color: #392C23;
+  }
+
+  p {
+     
+      font-family: 'FFShamelFamily-SansOnebook';
+      font-size: 14px;
+      color: #392C23;
+  }
+
+  small {
+      font-family: 'FFShamelFamily-SansOnebook';
+      font-size: 14px;
+      color: #392C23;
+  }
+
+  .divabsolute {
+      position: absolute;
+      top: 29%;
+      left: 37%;
+  }
+
+  .circle {
+      height: 30px;
+      width: 30px;
+      background-color: #F3F2F2;
+      border-radius: 50%;
+      text-align: center;
+
+      display: inline-block;
+  }
+
+  .row-cols-md-3>.col {
+      padding: 0 9px;
+  }
